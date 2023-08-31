@@ -51,3 +51,9 @@ body {
     padding: 0 16px;
     margin: 0 auto;
 }
+
+/*Customers Say Inna*/
+
+ul, ol{
+    list-style-type: none;
+}
