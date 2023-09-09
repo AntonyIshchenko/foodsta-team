@@ -1,5 +1,5 @@
 :root {
-    --black-color: #2c2c2c;
+  --black-color: #2c2c2c;
 }
 
 /* Стилі для обнулення верхніх відступів у елементів */
@@ -10,44 +10,102 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 /* Клас для обнулення базових властивостей списків (ul) */
 .list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* Клас для обнулення базових властивостей у посилань */
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Властивості для коректного відображення картинок */
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Властивості для обнулення курсиву address */
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 body {
-    /* font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif;
     font-family: 'Kalam', cursive; */
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: var(--black);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--black);
 }
 
 .container {
-    width: 1280px;
-    padding: 0 16px;
-    margin: 0 auto;
+  width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 28px;
+}
+
+.hero-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.hero-button {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.54;
+  letter-spacing: 0em;
+  text-align: right;
+  padding: 6px 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(187, 243, 48, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: rgba(255, 228, 80, 1);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 143px;
+}
+
+.hero-title-list {
+  display: block;
+  width: 511px;
+}
+
+.hero-img-border {
+  position: relative;
+}
+
+.hero-title-images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
