@@ -1,143 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
 
-        <link rel="stylesheet" href="./styles/styles.css" />
-    </head>
-    <body>
-        <!-- Header Viktor-->
-        <header>
-            <div class="container container-header">
-                <nav class="navigation-header">
-                    <a href="">
-                        <img
-                            class="logo-link"
-                            src="./img/logo.svg"
-                            alt="logo"
-                            width="66"
-                            height="52"
-                        />
-                    </a>
-                    <ul class="list header-list">
-                        <li class="header-list-link">
-                            <a href="" class="link link-home">Home</a>
-                        </li>
-                        <li class="header-list-link">
-                            <a href="" class="link">About</a>
-                        </li>
-                        <li class="header-list-link">
-                            <a href="" class="link">Service</a>
-                        </li>
-                        <li class="header-list-link">
-                            <a href="" class="link">Menu</a>
-                        </li>
-                        <li class="header-list-link">
-                            <a href="" class="link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="buton-order">
-                    <button class="buton-header" type="button">
-                        Order Now
-                    </button>
-                </div>
-            </div>
-        </header>
-        <!-- Hero Nataliya-->
-        <!-- Offerings Olexiy-->
-        <section>
-            <img src="./img/Special_Offering/aple.png" alt="apple" />
-            <h2>What’s Special About Our Offerings</h2>
-            <p>
-                With our platform, you can browse through a diverse selection of
-                cuisines and local restaurants, and choose from a variety of
-                dishes that cater to your specific taste buds.
-            </p>
-            <ul>
-                <li>
-                    <h3>Fasest Delivery</h3>
-                    <p>
-                        Our advanced logistics system and dedicated delivery
-                        partners ensure that your meals are delivered to you
-                        within 30-minutes.
-                    </p>
-                </li>
-                <li>
-                    <h3>Easy To Order</h3>
-                    <p>
-                        You can browse through a wide variety of cuisines and
-                        restaurants, select your favorite meals, and place your
-                        order in just a few clicks.
-                    </p>
-                </li>
-            </ul>
-            <button type="button">Order Now</button>
-        </section>
-        <!-- Favorites Andriy-->
-        <!-- Customers Say Inna-->
-        <!-- Subscribe Anton-->
-        <!-- Footer Tetyana-->
-
-        <!-- MODAL -->
-        <div class="backdrop">
-            <div class="modal">
-                <button class="modal-close-btn">
-                    <svg class="modal-close-btn-icon" width="24" height="24">
-                        <use href="./icons/icons.svg#cancel"></use>
-                    </svg>
-                </button>
-                <p class="modal-title">Order Form</p>
-                <form action="" class="modal-form">
-                    <div class="modal-input-wrap">
-                        <label for="user-name" class="modal-label">Name</label
-                        ><input
-                            type="text"
-                            class="modal-input"
-                            placeholder="Your name"
-                            id="user-name"
-                            pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ' ]+"
-                            required
-                        />
-                    </div>
-                    <div class="modal-input-wrap">
-                        <label for="user-phone" class="modal-label"
-                            >Phone number</label
-                        ><input
-                            type="phone"
-                            class="modal-input"
-                            placeholder="+38(0_ _) _ _ _   _ _   _ _"
-                            id="user-phone"
-                            pattern="[+0-9]{13}"
-                            required
-                        />
-                    </div>
-                    <div class="modal-input-wrap input-email-wrap">
-                        <label for="user-email" class="modal-label"
-                            >E-mail</label
-                        ><input
-                            type="email"
-                            class="modal-input"
-                            placeholder="example@gmail.com"
-                            id="user-email"
-                            required
-                        />
-                    </div>
-                    <button class="modal-send-btn">Send</button>
-                </form>
-            </div>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <!-- Header Viktor-->
+    <header>
+      <div class="container container-header">
+        <nav class="navigation-header">
+          <a href="">
+            <img
+              class="logo-link"
+              src="./img/logo.svg"
+              alt="logo"
+              width="66"
+              height="52"
+            />
+          </a>
+          <ul class="list header-list">
+            <li class="header-list-link">
+              <a href="" class="link link-home">Home</a>
+            </li>
+            <li class="header-list-link">
+              <a href="" class="link">About</a>
+            </li>
+            <li class="header-list-link">
+              <a href="" class="link">Service</a>
+            </li>
+            <li class="header-list-link">
+              <a href="" class="link">Menu</a>
+            </li>
+            <li class="header-list-link">
+              <a href="" class="link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="buton-order">
+          <button class="buton-header" type="button">Order Now</button>
         </div>
-    </body>
+      </div>
+    </header>
+    <!-- Hero Nataliya-->
+    <!-- Offerings Olexiy-->
+    <section>
+      <img src="./img/Special_Offering/aple.png" alt="apple" />
+      <h2>What’s Special About Our Offerings</h2>
+      <p>
+        With our platform, you can browse through a diverse selection of
+        cuisines and local restaurants, and choose from a variety of dishes that
+        cater to your specific taste buds.
+      </p>
+      <ul>
+        <li>
+          <h3>Fasest Delivery</h3>
+          <p>
+            Our advanced logistics system and dedicated delivery partners ensure
+            that your meals are delivered to you within 30-minutes.
+          </p>
+        </li>
+        <li>
+          <h3>Easy To Order</h3>
+          <p>
+            You can browse through a wide variety of cuisines and restaurants,
+            select your favorite meals, and place your order in just a few
+            clicks.
+          </p>
+        </li>
+      </ul>
+      <button type="button">Order Now</button>
+    </section>
+    <!-- Favorites Andriy-->
+    <!-- Customers Say Inna-->
+    <!-- Subscribe Anton-->
+    <!-- Footer Tetyana-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-blok">
+          <div class="footer-nav">
+            <a class="logo-footer" href="#">
+              <svg width="66" height="52" aria-level="logotype">
+                <use href="./icons/icons.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">About</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Service</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Menu</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-form">
+            <h3 class="footer-form-title">Subscribe</h3>
+            <form action="">
+              <label class="footer-form-label" for="footer-form-email"></label>
+              <input
+                class="footer-form-input"
+                id="footer-form-email"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <button class="footer-form-button" type="submit">
+                Subscribe
+              </button>
+              <p class="footer-form-text">
+                By subscribing you agree to with our
+                <a class="footer-form-link" href="#">Privacy Policy</a>
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="footer-link">
+          <ul class="footer-link-list">
+            <li class="footer-link-item">
+              <a class="footer-item-link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer-link-item">
+              <a class="footer-item-link" href="#">Terms of Service </a>
+            </li>
+            <li class="footer-link-item">
+              <a class="footer-item-link" href="#">Cookies Settings</a>
+            </li>
+          </ul>
+          <p class="footer-text">2022 FoodSta. All right reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- MODAL -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-btn">
+          <svg class="modal-close-btn-icon" width="24" height="24">
+            <use href="./icons/icons.svg#cancel"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Order Form</p>
+        <form action="" class="modal-form">
+          <div class="modal-input-wrap">
+            <label for="user-name" class="modal-label">Name</label
+            ><input
+              type="text"
+              class="modal-input"
+              placeholder="Your name"
+              id="user-name"
+              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ' ]+"
+              required
+            />
+          </div>
+          <div class="modal-input-wrap">
+            <label for="user-phone" class="modal-label">Phone number</label
+            ><input
+              type="phone"
+              class="modal-input"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              id="user-phone"
+              pattern="[+0-9]{13}"
+              required
+            />
+          </div>
+          <div class="modal-input-wrap input-email-wrap">
+            <label for="user-email" class="modal-label">E-mail</label
+            ><input
+              type="email"
+              class="modal-input"
+              placeholder="example@gmail.com"
+              id="user-email"
+              required
+            />
+          </div>
+          <button class="modal-send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
