@@ -19,36 +19,43 @@
     </head>
     <body>
         <!-- Header Viktor-->
-    <header>
-        <div class="container container-header">
-            
-            <nav class="navigation-header">
-                <a href="">
-                    <img class="logo-link" src="./img/logo.svg" alt="logo" width="66" height="52">
-                </a>
-                <ul class="list header-list">
-                    <li class="header-list-link">
-                        <a href="" class="link link-home">Home</a>
-                    </li>
-                    <li class="header-list-link">
-                        <a href="" class="link">About</a>
-                    </li>
-                    <li class="header-list-link">
-                        <a href="" class="link">Service</a>
-                    </li>
-                    <li class="header-list-link">
-                        <a href="" class="link">Menu</a>
-                    </li>
-                    <li class="header-list-link">
-                        <a href="" class="link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+        <header>
+            <div class="container container-header">
+                <nav class="navigation-header">
+                    <a href="">
+                        <img
+                            class="logo-link"
+                            src="./img/logo.svg"
+                            alt="logo"
+                            width="66"
+                            height="52"
+                        />
+                    </a>
+                    <ul class="list header-list">
+                        <li class="header-list-link">
+                            <a href="" class="link link-home">Home</a>
+                        </li>
+                        <li class="header-list-link">
+                            <a href="" class="link">About</a>
+                        </li>
+                        <li class="header-list-link">
+                            <a href="" class="link">Service</a>
+                        </li>
+                        <li class="header-list-link">
+                            <a href="" class="link">Menu</a>
+                        </li>
+                        <li class="header-list-link">
+                            <a href="" class="link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="buton-order">
-                <button class="buton-header" type="button">Order Now</button>
+                    <button class="buton-header" type="button">
+                        Order Now
+                    </button>
                 </div>
-        </div>
-    </header>
+            </div>
+        </header>
         <!-- Hero Nataliya-->
         <!-- Offerings Olexiy-->
         <section>
@@ -82,6 +89,51 @@
         <!-- Favorites Andriy-->
         <!-- Customers Say Inna-->
         <!-- Subscribe Anton-->
-        <!-- Footer I-->
+        <!-- Footer Tetyana-->
+
+        <!-- MODAL -->
+        <div class="backdrop">
+            <div class="modal">
+                <button class="close-modal-btn">
+                    x
+                    <!-- <svg>
+                        <use></use>
+                    </svg> -->
+                </button>
+                <p class="modal-title">Order Form</p>
+                <form action="" class="modal-form">
+                    <div class="input-wrap">
+                        <label for="user-name" class="modal-label">Name</label
+                        ><input
+                            type="text"
+                            class="modal-input"
+                            placeholder="Your name"
+                            id="user-name"
+                        />
+                    </div>
+                    <div class="input-wrap">
+                        <label for="user-phone" class="modal-label"
+                            >Phone number</label
+                        ><input
+                            type="phone"
+                            class="modal-input"
+                            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                            id="user-phone"
+                        />
+                    </div>
+                    <div class="input-wrap input-email-wrap">
+                        <label for="user-email" class="modal-label"
+                            >E-mail</label
+                        ><input
+                            type="email"
+                            class="modal-input"
+                            placeholder="example@gmail.com"
+                            id="user-email"
+                        />
+                    </div>
+                    <button class="send-modal-btn">Send</button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
