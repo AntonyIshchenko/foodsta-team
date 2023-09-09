@@ -51,3 +51,69 @@ body {
     padding: 0 16px;
     margin: 0 auto;
 }
+
+
+
+
+.logo-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-list {
+display:flex;
+column-gap: 28px;
+align-items: center;
+}
+
+
+.link {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.buton-header {
+    border-radius: 30px;
+    background-color: #BBF330;
+    justify-content: center; 
+    align-items: center;
+    height: 32px;
+    color: var(--black);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.9;
+    cursor: pointer;
+    border: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-header {
+    display: flex;
+    width: 100%;
+    max-width: 1120px;
+    justify-content: space-between;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-home {
+    text-decoration: underline;
+    color: #BBF330;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+
+.buton-header:hover,
+.buton-header:focus {
+    background-color: #FFE450;
+}
+
