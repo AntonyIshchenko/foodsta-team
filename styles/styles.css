@@ -1,5 +1,20 @@
 :root {
+    /* COLORS */
     --black-color: #2c2c2c;
+    --button-green-color: #bbf330;
+    --dark-green-color: #7eb101;
+    --white-color: #fefefe;
+    --white-background-color: #fff;
+    --yellow-main-color: #ffe550;
+    --shadow-fruit: radial-gradient(
+        50% 50% at 50% 50%,
+        #2f583f 0%,
+        rgba(105, 105, 105, 0) 100%
+    );
+
+    /* ANIMATION  */
+    --duration: 250ms;
+    --time-function: ease-in-out;
 }
 
 /* Стилі для обнулення верхніх відступів у елементів */
@@ -39,8 +54,6 @@ address {
 }
 
 body {
-    /* font-family: 'Inter', sans-serif;
-    font-family: 'Kalam', cursive; */
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: var(--black);
@@ -51,6 +64,12 @@ body {
     padding: 0 16px;
     margin: 0 auto;
 }
+
+/* ================================== CONSTANT */
+/* ======================================================================= */
+
+/* ======================================================================= */
+/* ====== HEADER */
 
 .logo-link {
     padding-top: 10px;
@@ -112,7 +131,11 @@ body {
     background-color: #ffe450;
 }
 
-/* MODAL */
+/* ================================== HEADER */
+/* ======================================================================= */
+
+/* ======================================================================= */
+/* ====== MODAL */
 
 .backdrop {
     position: fixed;
@@ -122,6 +145,13 @@ body {
     height: 100%;
     z-index: 9999;
     background-color: rgba(94, 99, 99, 0.7);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity var(--duration) var(--time-function),
+        visibility var(--duration) var(--time-function);
 }
 .modal {
     position: absolute;
@@ -131,29 +161,44 @@ body {
     max-width: 458px;
     padding: 32px;
 
+    color: var(--black-color);
+    font-size: 16px;
+
     border-radius: 30px;
-    background: #ffe550;
+    background: var(--yellow-main-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
 }
 
-.close-modal-btn {
+.modal-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 12px;
     right: 12px;
-
     width: 32px;
     height: 32px;
-
     padding: 0;
     line-height: 0;
-    background-color: #fff;
+    background-color: var(--white-background-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
     border: none;
     border-radius: 50%;
+    outline: transparent;
+
+    transition: background-color var(--duration) var(--time-function);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: var(--button-green-color);
+}
+
+.modal-close-btn-icon {
+    fill: var(--black-color);
 }
 
 .modal-title {
-    color: var(--Black, #2c2c2c);
     font-size: 24px;
     text-align: center;
     font-weight: 700;
@@ -165,22 +210,18 @@ body {
     width: 394px;
 }
 
-.input-wrap {
+.modal-input-wrap {
     display: flex;
     flex-direction: column;
     gap: 2px;
     margin-bottom: 24px;
 }
 
-.input-email-wrap {
+.modal-input-email-wrap {
     margin-bottom: 32px;
 }
 
 .modal-label {
-    color: var(--Black, #2c2c2c);
-
-    font-size: 16px;
-
     font-weight: 500;
     line-height: 1.4;
 }
@@ -191,23 +232,27 @@ body {
     height: 48px;
     border-radius: 30px;
     border: 1px solid rgba(18, 18, 18, 0.12);
-    background: #fff;
+    background-color: var(--white-background-color);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
 
-    color: #c4c4c4;
-    font-size: 16px;
-    line-height: 1.25; /* 125% */
+    color: var(--black-color);
+    line-height: 1.25;
     outline: transparent;
+
+    transition: border-color var(--duration) var(--time-function);
+}
+
+.modal-input::placeholder {
+    color: #c4c4c4;
 }
 
 .modal-input:focus {
-    border: 4px solid var(--Button-green, #bbf330);
+    border-color: var(--dark-green-color);
 }
 
-.send-modal-btn {
+.modal-send-btn {
     display: block;
-    color: var(--Black, #2c2c2c);
-    font-family: inherit;
+    color: var(--black-color);
     font-size: 13px;
     font-weight: 500;
     line-height: 1.5;
@@ -217,8 +262,24 @@ body {
     padding: 10px;
     text-align: center;
     margin: 0 auto;
-
+    outline: transparent;
     border-radius: 30px;
-    border: 2px solid var(--Dark-green, #7eb101);
-    background: #fff;
+    border: 2px solid var(--dark-green-color);
+    background-color: var(--white-background-color);
+
+    transition: background-color var(--duration) var(--time-function);
 }
+
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+    background-color: var(--button-green-color);
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+/* ================================== MODAL */
+/* ======================================================================= */
