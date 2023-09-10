@@ -1,5 +1,20 @@
 :root {
-    --black-color: #2c2c2c;
+  /* COLORS */
+  --black-color: #2c2c2c;
+  --button-green-color: #bbf330;
+  --dark-green-color: #7eb101;
+  --white-color: #fefefe;
+  --white-background-color: #fff;
+  --yellow-main-color: #ffe550;
+  --shadow-fruit: radial-gradient(
+      50% 50% at 50% 50%,
+      #2f583f 0%,
+      rgba(105, 105, 105, 0) 100%
+  );
+
+  /* ANIMATION  */
+  --duration: 250ms;
+  --time-function: ease-in-out;
 }
 
 /* Стилі для обнулення верхніх відступів у елементів */
@@ -10,72 +25,101 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 /* Клас для обнулення базових властивостей списків (ul) */
 .list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* Клас для обнулення базових властивостей у посилань */
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Властивості для коректного відображення картинок */
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Властивості для обнулення курсиву address */
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 body {
-    /* font-family: 'Inter', sans-serif;
-    font-family: 'Kalam', cursive; */
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: var(--black);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--black);
 }
 
 .container {
-    width: 1280px;
-    padding: 0 16px;
-    margin: 0 auto;
+  width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
+/* ================================== CONSTANT */
+/* ======================================================================= */
 
+/* ======================================================================= */
+/* ====== HEADER */
 
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--White, #FEFEFE);
+    box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
+}
 
 .logo-link {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.header-list {
-display:flex;
-column-gap: 28px;
-align-items: center;
+.navigation-header {
+    display: flex;
+    width: 100%;
+    max-width: 1120px;
+    justify-content: space-between;
 }
 
+.header-list {
+    display: flex;
+    column-gap: 28px;
+    align-items: center;
+}
 
 .link {
     color: #000;
     font-size: 14px;
     font-weight: 400;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.link:hover,
+.link:focus {
+color: #BBF330;
+}
+
+.link-home {
+    text-decoration: underline;
+    color: #bbf330;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .buton-header {
     border-radius: 30px;
-    background-color: #BBF330;
-    justify-content: center; 
+    background-color: #bbf330;
+    justify-content: center;
     align-items: center;
     height: 32px;
     color: var(--black);
@@ -88,42 +132,236 @@ align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-header {
-    display: flex;
-    width: 100%;
-    max-width: 1120px;
-    justify-content: space-between;
-}
-
-.container-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.link-home {
-    text-decoration: underline;
-    color: #BBF330;
-    font-size: 14px;
-    font-weight: 500;
-    
-}
-
 .buton-header:hover,
 .buton-header:focus {
-    background-color: #FFE450;
+    background-color: #ffe450;
 }
 
-.link:hover,
-.link:focus {
-color: #BBF330;
+/* ================================== HEADER */
+/* ======================================================================= */
+
+
+/* ======================================================================= */
+/* ====== HERO */
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 28px;
 }
 
-.link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.hero-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 40px;
 }
 
-.container-header {
-   background: var(--White, #FEFEFE);
-   box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
-} 
+.hero-button {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.54;
+  letter-spacing: 0em;
+  text-align: right;
+  padding: 6px 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(187, 243, 48, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: rgba(255, 228, 80, 1);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 143px;
+  margin-top: 14px;
+}
+
+.hero-title-list {
+  display: block;
+  width: 511px;
+}
+
+.hero-img-border {
+  position: relative;
+  width: 580px;
+  height: 580px;
+  top: 86px;
+  width: 580px;
+  background-color: rgba(254, 254, 254, 1);
+  border-radius: 50%;
+  border: 26px solid #ffe550;
+  margin-top: 14px;
+  transform: translateY(-15%);
+}
+
+.hero-title-images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ================================== HERO */
+/* ======================================================================= */
+
+
+/* ======================================================================= */
+/* ====== MODAL */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(94, 99, 99, 0.7);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity var(--duration) var(--time-function),
+        visibility var(--duration) var(--time-function);
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 458px;
+    padding: 32px;
+
+    color: var(--black-color);
+    font-size: 16px;
+
+    border-radius: 30px;
+    background: var(--yellow-main-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+}
+
+.modal-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    line-height: 0;
+    background-color: var(--white-background-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+    border: none;
+    border-radius: 50%;
+    outline: transparent;
+
+    transition: background-color var(--duration) var(--time-function);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: var(--button-green-color);
+}
+
+.modal-close-btn-icon {
+    fill: var(--black-color);
+}
+
+.modal-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.modal-form {
+    width: 394px;
+}
+
+.modal-input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 24px;
+}
+
+.modal-input-email-wrap {
+    margin-bottom: 32px;
+}
+
+.modal-label {
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 14px 12px;
+    height: 48px;
+    border-radius: 30px;
+    border: 1px solid rgba(18, 18, 18, 0.12);
+    background-color: var(--white-background-color);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
+
+    color: var(--black-color);
+    line-height: 1.25;
+    outline: transparent;
+
+    transition: border-color var(--duration) var(--time-function);
+}
+
+.modal-input::placeholder {
+    color: #c4c4c4;
+}
+
+.modal-input:focus {
+    border-color: var(--dark-green-color);
+}
+
+.modal-send-btn {
+    display: block;
+    color: var(--black-color);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+    min-width: 106px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    outline: transparent;
+    border-radius: 30px;
+    border: 2px solid var(--dark-green-color);
+    background-color: var(--white-background-color);
+
+    transition: background-color var(--duration) var(--time-function);
+}
+
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+    background-color: var(--button-green-color);
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+/* ================================== MODAL */
+/* ======================================================================= */
