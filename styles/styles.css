@@ -54,6 +54,113 @@ body {
 
 /*Customers Say Inna*/
 
-ul, ol{
+.customers {
+    max-width: 1280px;
+    background-image: url(../img/Customers_Say/Rectangleo.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 0 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customers-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 704px;
+}
+
+ul,
+lo {
     list-style-type: none;
+}
+
+.customers-title {
+    padding-top: 100px;
+    color: var(--black);
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.customers-container-icon {
+    padding-bottom: 200px;
+}
+
+.customers-paragrapf {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.icon-stars {
+    width: 101px;
+    height: 16px;
+    margin-bottom: 28px;
+}
+
+.customers-tetx {
+    width: 473px;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.customers-item {
+    display: flex;
+    flex-direction: row;
+    width: 160px;
+    border-right: 1px solid #7EB101;
+}
+
+.customers-img {
+    height: 48px;
+    width: 48px;
+}
+
+.customers-menu-text-up {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.customers-menu-text {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.customers-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 16px;
+}
+
+.customers-container-icon,
+.customers-icon-end {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 139px;
+}
+
+.customers-info {
+    width: 473px;
+    height: 155px;
+}
+
+.customers-icon-end {
+    background-image: url(../img/Customers_Say/Rectanglew.jpg);
+    background-size: cover;
+    background-position: 16px 220px;
+    width: 501px;
+    height: 227px;
+    padding: 12px;
+    border-radius: 0px 30px 30px 30px;
+    width: 501px;
 }
