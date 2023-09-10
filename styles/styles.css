@@ -92,6 +92,7 @@ body {
   display: flex;
   align-items: center;
   gap: 143px;
+  margin-top: 14px;
 }
 
 .hero-title-list {
@@ -101,6 +102,15 @@ body {
 
 .hero-img-border {
   position: relative;
+  width: 580px;
+  height: 580px;
+  top: 86px;
+  width: 580px;
+  background-color: rgba(254, 254, 254, 1);
+  border-radius: 50%;
+  border: 26px solid #ffe550;
+  margin-top: 14px;
+  transform: translateY(-15%);
 }
 
 .hero-title-images {
