@@ -69,6 +69,13 @@ border: 16px solid #FFE550;
 background: #FEFEFE;
 }
 
+.img-food{
+width: 315px;
+height: 315px;
+border-radius: 157.5px;
+background: lightgray -52.771px -50.365px / 131.959% 131.959% no-repeat;
+}
+
 .our-favorites{
 text-align: center;
 background-color: #FEFEFE;
