@@ -70,9 +70,7 @@ align-items: center;
 .link {
     color: #000;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 .buton-header {
     border-radius: 30px;
@@ -83,9 +81,10 @@ align-items: center;
     color: var(--black);
     font-size: 13px;
     font-weight: 500;
-    line-height: 1.9;
+    line-height: 1.5;
     cursor: pointer;
     border: 0;
+    display: flex;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -106,9 +105,7 @@ align-items: center;
     text-decoration: underline;
     color: #BBF330;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     
 }
 
@@ -117,3 +114,16 @@ align-items: center;
     background-color: #FFE450;
 }
 
+.link:hover,
+.link:focus {
+color: #BBF330;
+}
+
+.link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container-header {
+   background: var(--White, #FEFEFE);
+   box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
+} 
