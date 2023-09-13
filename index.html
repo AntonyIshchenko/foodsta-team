@@ -14,15 +14,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
-
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
+
   <body>
     <!-- Header Viktor-->
     <header>
-      <div class="container container-header">
+      <div class="container header-container">
         <nav class="navigation-header">
-          <a href="">
+          <a href="./index.html">
             <img
               class="logo-link"
               src="./img/logo.svg"
@@ -33,59 +33,152 @@
           </a>
           <ul class="list header-list">
             <li class="header-list-link">
-              <a href="" class="link link-home">Home</a>
+              <a href="./index.html" class="link link-home">Home</a>
             </li>
             <li class="header-list-link">
-              <a href="" class="link">About</a>
+              <a href="#hero" class="link">About</a>
             </li>
             <li class="header-list-link">
-              <a href="" class="link">Service</a>
+              <a href="#offerings" class="link">Service</a>
             </li>
             <li class="header-list-link">
-              <a href="" class="link">Menu</a>
+              <a href="#favorites" class="link">Menu</a>
             </li>
             <li class="header-list-link">
-              <a href="" class="link">Contact</a>
+              <a href="#subscribe" class="link">Contact</a>
             </li>
           </ul>
         </nav>
-        <div class="buton-order">
-          <button class="buton-header" type="button">Order Now</button>
-        </div>
+
+        <button class="header-btn" type="button">Order Now</button>
       </div>
     </header>
+
     <!-- Hero Nataliya-->
-    <!-- Offerings Olexiy-->
-    <section>
-      <img src="./img/Special_Offering/aple.png" alt="apple" />
-      <h2>What’s Special About Our Offerings</h2>
-      <p>
-        With our platform, you can browse through a diverse selection of
-        cuisines and local restaurants, and choose from a variety of dishes that
-        cater to your specific taste buds.
-      </p>
-      <ul>
-        <li>
-          <h3>Fasest Delivery</h3>
-          <p>
-            Our advanced logistics system and dedicated delivery partners ensure
-            that your meals are delivered to you within 30-minutes.
-          </p>
-        </li>
-        <li>
-          <h3>Easy To Order</h3>
-          <p>
-            You can browse through a wide variety of cuisines and restaurants,
-            select your favorite meals, and place your order in just a few
-            clicks.
-          </p>
-        </li>
-      </ul>
-      <button type="button">Order Now</button>
+    <section id="hero">
+      <div class="container hero">
+        <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+        <p class="hero-text">
+          With just a few clicks, you can have your favorite meals delivered straight to
+          your doorstep, no matter where you are. Order now and enjoy a hassle-free and
+          delicious meal from the comfort of your own home.
+        </p>
+        <button class="hero-button" type="button">Order Now</button>
+
+        <div class="hero-img-border">
+          <img
+            class="hero-image"
+            src="./img/Enjoy_Your_Favorite/pngwing.png"
+            alt="Hero Food image"
+            width="528"
+            height="528"
+          />
+        </div>
+      </div>
     </section>
+
+    <!-- Offerings Olexiy-->
+    <section class="offerings-section" id="offerings">
+      <div class="container offerings-container">
+        <img src="./img/Special_Offering/aple.png" width="396" height="502" alt="apple" />
+        <h2>What’s Special About Our Offerings</h2>
+        <p>
+          With our platform, you can browse through a diverse selection of cuisines and
+          local restaurants, and choose from a variety of dishes that cater to your
+          specific taste buds.
+        </p>
+        <ul>
+          <li>
+            <h3>Fasest Delivery</h3>
+            <p>
+              Our advanced logistics system and dedicated delivery partners ensure that
+              your meals are delivered to you within 30-minutes.
+            </p>
+          </li>
+          <li>
+            <h3>Easy To Order</h3>
+            <p>
+              You can browse through a wide variety of cuisines and restaurants, select
+              your favorite meals, and place your order in just a few clicks.
+            </p>
+          </li>
+        </ul>
+        <button type="button">Order Now</button>
+      </div>
+    </section>
+
     <!-- Favorites Andriy-->
+    <section id="favorites">
+      <div class="container favorites-container">
+        <h2>Some of Our Favorites</h2>
+        <p>Looking for something delicious?</p>
+      </div>
+    </section>
+
     <!-- Customers Say Inna-->
+    <section class="customers">
+      <div class="container customers-container">
+        <h2 class="customers-title">What our Customers Say</h2>
+        <p class="customers-paragrapf">
+          Don't just take our word for it - see what our satisfied customers have to say
+        </p>
+
+        <ul class="customers-feedback-list">
+          <li class="customers-feedback-item">
+            <svg class="customers-stars-icon" width="101" height="16">
+              <use href="./img/icons.svg#icon-Stars"></use>
+            </svg>
+            <p class="customers-text">
+              “The Best app I have used to order food in a while, so many options to
+              choose from too, I would recommend to a freind, No questions asked”
+            </p>
+            <div class="customers-person">
+              <img
+                class="customers-img"
+                src="./img/Customers_Say/Ellipse.jpg"
+                height="48"
+                width="48"
+                alt="boy"
+              />
+              <ul class="customers-menu">
+                <li class="customers-menu-text-up">Sumith Shah</li>
+                <li class="customers-menu-text">Some Dude</li>
+              </ul>
+            </div>
+          </li>
+          <li class="customers-feedback-item">
+            <svg class="customers-stars-icon" width="101" height="16">
+              <use href="./img/icons.svg#icon-Stars"></use>
+            </svg>
+            <p class="customers-text">
+              “The ease with which I can just go in and order what i want was amazing, It
+              has been a very pleasant experience ordering from this app”
+            </p>
+            <div class="customers-person">
+              <img
+                class="customers-img"
+                src="./img/Customers_Say/Ellipsed.jpg"
+                height="48"
+                width="48"
+                alt="beby"
+              />
+              <ul class="customers-menu">
+                <li class="customers-menu-text-up">Sumith Shah</li>
+                <li class="customers-menu-text">Some Dude</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- Subscribe Anton-->
+    <section id="subscribe">
+      <div class="container subscribe-container">
+        <h2>Subscribe To Get Special Offers</h2>
+      </div>
+    </section>
+
     <!-- Footer Tetyana-->
     <footer class="footer">
       <div class="container">
@@ -98,19 +191,19 @@
             </a>
             <ul class="footer-nav-list list">
               <li class="footer-nav-item">
-                <a class="link" href="#">Home</a>
+                <a class="link" href="./index.html">Home</a>
               </li>
               <li class="footer-nav-item">
-                <a class="link" href="#">About</a>
+                <a class="link" href="#hero">About</a>
               </li>
               <li class="footer-nav-item">
-                <a class="link" href="#">Service</a>
+                <a class="link" href="#offerings">Service</a>
               </li>
               <li class="footer-nav-item">
-                <a class="link" href="#">Menu</a>
+                <a class="link" href="#favorites">Menu</a>
               </li>
               <li class="footer-nav-item">
-                <a class="link" href="#">Contact</a>
+                <a class="link" href="#subscribe">Contact</a>
               </li>
             </ul>
           </nav>
@@ -150,6 +243,7 @@
         </div>
       </div>
     </footer>
+
     <!-- MODAL -->
     <div class="backdrop">
       <div class="modal">
