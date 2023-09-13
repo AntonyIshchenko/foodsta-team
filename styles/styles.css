@@ -319,6 +319,127 @@ body {
 }
 
 /* ======================================================================= */
+/* ======= FOOTER */
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(./img/Footer/Fruit.jpg);
+  background-size: 1248px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.footer-blok {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.footer-nav-link {
+  margin-right: 143px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.footer-nav-list {
+  display: flex;
+  column-gap: 28px;
+  align-items: center;
+}
+
+.footer-form-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.footer-form-input {
+  width: 279px;
+  padding: 12px;
+  height: 42px;
+  margin-right: 13px;
+  border-radius: 30px;
+  border: 0.854px solid var(--yellow-main-color);
+  background: var(--White, #fefefe);
+  background-color: var(--white-background-color);
+
+  color: var(--black-color);
+  line-height: 1.25;
+  outline: transparent;
+}
+
+.footer-form-input:focus {
+   border: 0.854px solid var(--dark-green-color);  
+}
+
+.footer-form-button {
+  color: var(--black-color);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  min-width: 103px;
+  height: 42px;
+  padding: 11px 22px;
+  text-align: center;
+  margin: 0 auto;
+  outline: transparent;
+  border-radius: 30px;
+  border: 0.854px solid var(--dark-green-color);
+  background-color: var(--white-background-color);
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+  border: 0.854px solid var(--yellow-main-color);
+}
+
+.form-subscribe {
+  margin-bottom: 12px;
+}
+
+.footer-form-text {
+  font-size: 12px;
+  max-width: 341px;
+  line-height: normal;
+}
+
+.footer-form-link {
+  color: var(--dark-green-color);
+}
+
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link-list {
+  display: flex;
+  column-gap: 20px;
+}
+
+.footer-item-link {
+  color: var(--dark-green-color);
+  font-size: 12px;
+  line-height: normal;
+}
+
+.footer-text {
+  font-size: 12px;
+  line-height: normal;
+}
+
+/* ============================================ FOOTER  */
+/* ======================================================================= */
+
+/* ======================================================================= */
 /* ====== MODAL */
 
 .backdrop {
@@ -466,4 +587,3 @@ body {
 }
 
 /* ================================== MODAL */
-/* ======================================================================= */
